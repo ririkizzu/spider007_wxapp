@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/register_info/register_info",
+    "pages/my/my",
+    "pages/credit/credit",
+    "pages/platform/platform"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2E2EF3",
+    "navigationBarTitleText": "蜘蛛007",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#4F4F4F",
+    "selectedColor": "#2E2EF3",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index-off.png",
+        "selectedIconPath": "images/index.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my-off.png",
+        "selectedIconPath": "images/my.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "image-load": "./components/image-load/image-load"
+  }
+}

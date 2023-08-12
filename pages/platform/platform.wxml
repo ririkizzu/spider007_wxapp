@@ -1,0 +1,34 @@
+<view class="platform">
+  <view class="title">
+    <text>已支持查询平台{{count}}个</text>
+  </view>
+
+  <view class="body">
+    <view class="platform-list">
+      <block wx:for="{{platformList}}" wx:key="id">
+        <view class="platform-item" id="{{item.id}}">
+          <view class="platform-img">
+            <image-load default-image="../../images/loading-gif.gif" original-image="{{item.icon}}" mode="widthFix" />
+          </view>
+
+          <view class="platform-detail">
+            <view class="platform-name">
+              <text>{{item.name}}</text>
+              <view class="item-name-tag">
+                <block wx:for="{{item.tag}}" wx:key="index">
+                  <view class="item-name-tag-item">
+                    <text>{{item}}</text>
+                  </view>
+                </block>
+              </view>
+            </view>
+
+            <view class="platform-desc">
+              <text>{{item.desc}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

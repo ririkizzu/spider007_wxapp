@@ -1,0 +1,56 @@
+<view class="register">
+  <view class="head">
+    <view class="title">
+      <view class="number">
+        <image src="../../images/iphone.png" mode="widthFix" />
+
+        <text>{{phoneNum}}</text>
+      </view>
+
+      <view class="summary">
+        <text>查询到 {{summaryCount}} 条结果</text>
+
+        <image class="separator" src="../../images/dot_separator_white.png" mode="widthFix" />
+
+        <!-- 手机号历史查询次数 -->
+        <view class="history">
+          <image src="../../images/history.png" mode="widthFix" />
+          <text>{{queries}}</text>
+        </view>
+      </view>
+
+      <view class="credit-summary">
+        <text>本次消耗5积分 剩余{{credit}}积分</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="body">
+    <view class="info-list">
+      <block wx:for="{{infoList}}" wx:key="id">
+        <view class="info-item" id="{{item.id}}">
+          <view class="info-img">
+            <image-load default-image="../../images/loading-gif.gif" original-image="{{item.icon}}" mode="widthFix" />
+          </view>
+
+          <view class="info-detail">
+            <view class="info-name">
+              <text>{{item.name}}</text>
+              <view class="item-name-tag">
+                <block wx:for="{{item.tag}}" wx:key="index">
+                  <view class="item-name-tag-item">
+                    <text>{{item}}</text>
+                  </view>
+                </block>
+              </view>
+            </view>
+
+            <view class="info-desc">
+              <text>{{item.desc}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

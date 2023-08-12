@@ -1,0 +1,63 @@
+.head {
+  background: linear-gradient(#2E2EF3, #588AF6);
+  height: 400rpx;
+  position: absolute;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100rpx;
+}
+
+.title image {
+  width: 150rpx;
+  padding-right: 10rpx;
+}
+
+.title text {
+  width: 300rpx;
+  font-size: 30rpx;
+  color: white;
+  padding-left: 10rpx;
+}
+
+.body {
+  background-color: white;
+  position: relative;
+  top: 350rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.body input {
+  position: absolute;
+  top: -40rpx;
+  background-color: white;
+  height: 80rpx;
+  width: 650rpx;
+  box-shadow: 0 12rpx 28rpx rgba(153, 153, 153, 0.34);
+  border-radius: 16rpx;
+  text-align: center;
+}
+
+.input button image {
+  width: 30rpx;
+}
+
+.scan {
+  margin-top: 80rpx;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 100rpx;
+  width: 100%;
+  text-decoration: underline;
+  font-size: 28rpx;
+  color: #9e9e9e;
+}

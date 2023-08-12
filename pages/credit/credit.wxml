@@ -1,0 +1,59 @@
+<view class="credit">
+  <view class="head">
+    <view class="head-credit">
+      <text id="desc">剩余积分</text>
+      <text id="count">{{credit}}</text>
+    </view>
+  </view>
+
+  <view class="body">
+    <!-- 每日任务 -->
+    <view class="menu">
+      <!-- 任务类型/每日任务 -->
+      <view class="menu-title">
+        <text id="type">每日任务</text>
+        <text id="type-desc">（0点更新）</text>
+      </view>
+      <!-- 每日签到 -->
+      <view class="menu-item">
+        <view class="menu-item-content">
+          <view class="menu-icon">
+            <image id="icon" src="../../images/signed.png" mode="widthFix" />
+          </view>
+
+          <view class="icon2">
+            <text id="text">每日签到</text>
+            <view class="icon2-body">
+              <image id="icon2-img" src="../../images/coin.png" mode="widthFix" />
+              <text id="icon2-text">+2</text>
+            </view>
+          </view>
+        </view>
+        <view>
+          <button id="signed" wx:if="{{signed}}" bindtap="signedToast">签到</button>
+          <button id="unsigned" wx:else bindtap="signed">签到</button>
+        </view>
+      </view>
+      <!-- 看视频领积分 -->
+      <view class="menu-item">
+        <view class="menu-item-content">
+          <view class="menu-icon">
+            <image id="icon" src="../../images/video.png" mode="widthFix" />
+          </view>
+
+          <view class="icon2">
+            <text id="text">看视频领积分（{{rewardedCount}}/10）</text>
+            <view class="icon2-body">
+              <image id="icon2-img" src="../../images/coin.png" mode="widthFix" />
+              <text id="icon2-text">+3</text>
+            </view>
+          </view>
+        </view>
+        <view>
+          <button id="signed" wx:if="{{limited==1}}" bindtap="limitedToast">观看</button>
+          <button id="unsigned" wx:else bindtap="showRewardedVideoAd">观看</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

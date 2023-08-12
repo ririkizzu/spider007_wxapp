@@ -1,0 +1,19 @@
+<view class="index">
+  <view class="head">
+    <view class="title">
+      <image src="../../images/spider.png" mode="widthFix" />
+
+      <text>一键查询你的手机号码在哪些App和网站平台上注册过账号</text>
+    </view>
+  </view>
+
+  <view class="body">
+    <input type="number" placeholder="请输入号码" maxlength="11" value="{{phoneNum}}" bindinput="inputHandle" />
+
+    <button class="scan" type="primary" style="width: 650rpx;" bindtap="scanRequest">一键查询</button>
+  </view>
+
+  <view class="bottom">
+    <text bindtap="getPlatformList">支持查询的平台清单</text>
+  </view>
+</view>

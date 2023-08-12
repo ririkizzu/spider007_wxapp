@@ -1,0 +1,52 @@
+<view class="my">
+  <view class="head">
+  </view>
+
+  <view class="body">
+    <view class="content">
+      <view class="user-title">
+        <view class="user-title-left">
+          <view class="user-title-image">
+            <image src="{{avatarUrl}}" mode="widthFix" />
+          </view>
+
+          <view class="user-name">
+            <view class="user-nick_name">
+              <text>{{nickName}}</text>
+            </view>
+            <view class="user-id">
+              <image src="../../images/id.png" mode="widthFix" />
+              <text user-select="true">{{id}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="user-menu">
+        <view class="menu-item">
+          <view class="menu-item-1">
+            <image id="icon" src="../../images/credit.png" mode="widthFix" />
+            <text id="text">积分中心</text>
+          </view>
+
+          <view class="coin">
+            <image id="coin-img" src="../../images/coin.png" mode="widthFix" />
+            <text id="coin-text">{{credit}}</text>
+          </view>
+          <button id="button" bindtap="navigateToCredit"></button>
+        </view>
+
+        <view class="menu-item">
+          <view class="menu-item-1">
+            <image id="icon" src="../../images/contact.png" mode="widthFix" />
+            <text id="text">在线客服</text>
+          </view>
+
+          <image id="arrow" src="../../images/right.png" mode="widthFix" />
+          <!-- 客服按钮 -->
+          <button id="button" open-type="contact"></button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

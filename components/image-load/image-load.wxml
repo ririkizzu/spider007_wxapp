@@ -1,0 +1,2 @@
+<image wx:if='{{!finishedFlag}}' mode='{{mode}}' src='{{defaultImage}}' style='{{width ? "width:" + width : ""}};{{height ? "height:" + height : ""}}' />
+<image mode='{{mode}}' class='{{finishedFlag ? "" : "before-load"}}' src='{{originalImage}}' show-menu-by-longpress='{{showMenuByLongpress}}' bindload='finishLoad' />
