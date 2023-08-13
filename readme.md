@@ -22,3 +22,5 @@ wx.cloud.init({
 ## 演示
 视频演示：https://www.bilibili.com/video/BV1aV4y1v7df/
 
+## 小程序预览
+![蜘蛛007](./example/spider007.jpg)
